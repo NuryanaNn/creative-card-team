@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #051124;
+}
+
+.team .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.team .content .images{
+    width: 300px;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+.team .content .images img{
+    width: 100%;
+}
+
+.team .content .images .sci{
+    position: absolute;
+    right: 10px;
+    list-style: none;
+    transition: 1s;
+    bottom: -90px;
+}
+
+.team .content .images .sci li{
+    margin-top: 10px;
+    background-color: #001a46;
+    padding: 8px;
+    color: #fff;
+}
+
+.team .content .images:hover .sci{
+    bottom: 90px;
+    transition: 1s;
+}
+
+.team .content .images .userNames{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #402ab0;
+    text-transform: capitalize;
+    border-radius: 100px 0 0 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+.team .content .images:hover .userNames{
+    border-radius: 0 0 0 0;
+    transition: 1s;
+}
